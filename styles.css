@@ -1,1 +1,80 @@
 /*  your css code here. If applicable */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 450px;
+}
+
+.hero-image {
+	width: 72%;
+	height: 450px;
+}
+
+.hero-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-content {
+	width: 28%;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+.hero-content h1 {
+	font-family: Georgia, serif;
+	font-size: 34px;
+	margin-bottom: 18px;
+}
+
+.hero-content p {
+	font-family: Georgia, serif;
+	font-size: 17px;
+	line-height: 1.3;
+	margin-bottom: 18px;
+}
+
+.explore-btn {
+	padding: 10px 20px;
+	 background-color: red;
+     color: white;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 350px;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: 300px;
+  }
+}
